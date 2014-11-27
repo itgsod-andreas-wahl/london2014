@@ -1,0 +1,14 @@
+link rel='stylesheet' type='text/css' href='css/design.css'
+
+- for image in @images
+    img src= "/images/#{image.filename}" class='resize'
+    - unless Comment.get(image.id).nil?
+      p= "'#{Comment.get(image.id).content}'"
+    - for tag in Tag.all(image_id: image.id)
+        p= tag.name
+        
+    p= Assessment.avg(:rating, :conditions => ['image_id = ?', "#{image.id}"])
+    form action="/rate/#{image.id}" method='post'
+      label for='rating' Rate
+      input type='text' name='rating' id='rating'
+      button type='submit' Rate
