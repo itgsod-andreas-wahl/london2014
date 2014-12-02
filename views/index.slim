@@ -1,12 +1,17 @@
-link rel='stylesheet' type='text/css' href='css/design.css'
+form action="/tags/" method='post'
+  label for='tag' Tags:
+  input type='text' name='tag' id='tag'
+  button type='submit' Search
+
 
 - for image in @images
     img src= "/images/#{image.filename}" class='resize'
-    - unless Comment.get(image.id).nil?
-      p= "'#{Comment.get(image.id).content}'"
-    - for tag in Tag.all(image_id: image.id)
+    - for comment in image.comments
+     - unless comment.nil?
+        p= "'#{comment.content}'"
+    - for tag in image.tags
         p= tag.name
-        
+
     p= Assessment.avg(:rating, :conditions => ['image_id = ?', "#{image.id}"])
     form action="/rate/#{image.id}" method='post'
       label for='rating' Rate

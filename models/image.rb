@@ -6,5 +6,5 @@ class Image
 
   has n, :assessments
   has n, :comments
-  has n, :tags
+  has n, :tags, :through => Resource
 end

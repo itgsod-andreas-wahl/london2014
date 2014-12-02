@@ -4,5 +4,5 @@ class Tag
   property :id, Serial
   property :name, String
 
-  belongs_to :image
+  has n, :image, :through => Resource
 end
