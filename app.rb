@@ -11,10 +11,16 @@ class App < Sinatra::Base
     redirect '/'
   end
 
+  post '/comment/:image_id' do |image_id|
+    Comment.create({image_id: image_id, content: params['comment']})
+    redirect '/'
+  end
+
   get '/tags/*' do
     @images = []
+    splat = params[:splat].first.split('/')
 
-    params[:splat].each do |tag|
+    splat.each do |tag|
       @images << ImageTag.all(tag: Tag.first(name: tag)).images
     end
 
@@ -23,8 +29,20 @@ class App < Sinatra::Base
     slim :index
   end
 
-  post '/tags/*' do
-    @images = Image.all(tags: {name: params['tag']})
+  post '/tags/' do
+    @images = []
+
+    tags = params['tag'].split(', ')
+
+    if tags.is_a? Array
+      tags.each do |tag|
+        @images << ImageTag.all(tag: Tag.first(name: tag)).images
+      end
+    else
+      @images << ImageTag.all(tag: Tag.first(name: params['tag'])).images
+    end
+
+    @images = @images.flatten.uniq
 
     slim :index
   end
