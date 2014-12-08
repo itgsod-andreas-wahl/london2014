@@ -1,24 +1,39 @@
-form action="/tags/" method='post'
-  label for='tag' Tags:
-  input type='text' name='tag' id='tag'
-  button type='submit' Search
+nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+  div class="container-fluid"
+    div class="navbar-header"
+      a class="navbar-brand" href="#" London ITG
+      form action="/tags/" method='post' class="navbar-form navbar-left" role="search"
+        div class="form-group"
+          input type="text" class="form-control" placeholder="search" name="tag" id="tag"
+        button type='submit' class="btn btn-default" Submit
+
+div id="content"
+  - for image in @images
+      div class="col-md-12" id="content-image"
+        div class="col-md-6"
+          img src= "/images/#{image.filename}" class='resize'
+        div class="col-md-6"
+          - for comment in image.comments
+           - unless comment.nil?
+              blockquote
+                p= "#{comment.content}"
+                small="#{comment.owner}"
+          - for tag in image.tags
+              span class="label label-info" #{tag.name}
 
 
-- for image in @images
-    img src= "/images/#{image.filename}" class='resize'
-    - for comment in image.comments
-     - unless comment.nil?
-        p= "'#{comment.content}'"
-    - for tag in image.tags
-        p= tag.name
+          p= Assessment.avg(:rating, :conditions => ['image_id = ?', "#{image.id}"])
+          form action="/rate/#{image.id}" method='post'
+            div class="form-group"
+              select name="rating" id="rating"
+                - for i in 1..5
+                  option value="#{i}" #{i}
+            /label for='rating' Rate
+            /input type='text' name='rating' id='rating'
+            button type='submit' class="btn btn-default" Rate
 
-    p= Assessment.avg(:rating, :conditions => ['image_id = ?', "#{image.id}"])
-    form action="/rate/#{image.id}" method='post'
-      label for='rating' Rate
-      input type='text' name='rating' id='rating'
-      button type='submit' Rate
-
-    form action="/comment/#{image.id}" method='post'
-      label for='comment' Comment
-      input type='text' name='comment' id='comment'
-      button type='submit' Comment
+          form action="/comment/#{image.id}" method='post'
+            div class="form-group"
+              input type='text' class="form-control comment-text" role="search" name='comment' id='comment' placeholder="Comment"
+              input type='text' class="form-control name" role="search" name='owner' id='owner' placeholder="Name"
+            button type='submit' class="btn btn-default" Submit

@@ -3,6 +3,7 @@ class Comment
 
   property :id, Serial
   property :content, String
+  property :owner, String
 
   belongs_to :image
 end

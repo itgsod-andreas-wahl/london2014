@@ -12,7 +12,8 @@ class App < Sinatra::Base
   end
 
   post '/comment/:image_id' do |image_id|
-    Comment.create({image_id: image_id, content: params['comment']})
+    params['owner'] = "Anonymous" if params['owner'] == ""
+    Comment.create({image_id: image_id, content: params['comment'], owner: params['owner']})
     redirect '/'
   end
 

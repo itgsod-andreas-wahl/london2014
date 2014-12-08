@@ -65,8 +65,8 @@ class Seed
 
   def self.comments
     comments = [
-        {content: 'Fin bild!', image_id: 1},
-        {content: 'Ful bild!', image_id: 3}
+        {content: 'Fin bild!', image_id: 1, owner: "Andreas"},
+        {content: 'Ful bild!', image_id: 3, owner: "Fredrik"}
     ]
 
     comments.each {|comment| Comment.create(comment)}

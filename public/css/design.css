@@ -1,4 +1,28 @@
 .resize {
-    width: 800px;
+    width: 620px;
     height: auto;
+}
+
+image {
+    border-bottom: 50px;
+}
+
+.navbar-fixed-top {
+    border-bottom: 100px;
+}
+
+#content {
+    margin-top: 48px;
+}
+
+#content-image {
+    margin-top: 30px;
+}
+
+.name {
+    width:30%;
+    border-top:15px;
+}
+
+.comment-text {
 }
