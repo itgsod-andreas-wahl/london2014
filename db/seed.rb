@@ -65,7 +65,7 @@ class Seed
 
   def self.comments
     comments = [
-        {content: 'good photographer', image_id: 1, owner: "Everyone"},
+        {content: 'Nice photograph!', image_id: 1, owner: "Everyone"},
         {content: 'Ful bild!', image_id: 3, owner: "Fredrik"}
     ]
 

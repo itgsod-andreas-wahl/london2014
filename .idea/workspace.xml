@@ -34,10 +34,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.slim" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/index.slim">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3644068" vertical-offset="55" max-vertical-offset="660">
+                <state vertical-scroll-proportion="-8.958333" vertical-offset="55" max-vertical-offset="660">
                   <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
                   <folding />
                 </state>
@@ -64,11 +64,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="seed.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="seed.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db/seed.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="1440">
-                  <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.49760765" vertical-offset="693" max-vertical-offset="1440">
+                  <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/models/comment.rb" />
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/public/css/design.css" />
-        <option value="$PROJECT_DIR$/db/seed.rb" />
         <option value="$PROJECT_DIR$/views/index.slim" />
+        <option value="$PROJECT_DIR$/db/seed.rb" />
       </list>
     </option>
   </component>
@@ -856,18 +856,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seed.rb">
+    <entry file="file://$PROJECT_DIR$/views/index.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="1440">
-          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+        <state vertical-scroll-proportion="-8.958333" vertical-offset="55" max-vertical-offset="660">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.slim">
+    <entry file="file://$PROJECT_DIR$/db/seed.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3644068" vertical-offset="55" max-vertical-offset="660">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.49760765" vertical-offset="693" max-vertical-offset="1440">
+          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
           <folding />
         </state>
       </provider>
