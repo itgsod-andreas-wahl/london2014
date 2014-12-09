@@ -21,9 +21,15 @@ image {
 
 .overflow-fix {
     overflow:hidden;
-    height:105px;
+    height:110px;
 }
 
 .paragraph-fix {
-    height: 75px;
+    height: 70px;
+    overflow:hidden;
+}
+
+.blockquote-fixed {
+    margin-left: -8.7%;
+    margin-top: 15px;
 }
