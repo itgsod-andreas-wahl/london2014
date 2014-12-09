@@ -18,3 +18,12 @@ image {
 #content-image {
     margin-top: 30px;
 }
+
+.overflow-fix {
+    overflow:hidden;
+    height:105px;
+}
+
+.paragraph-fix {
+    height: 75px;
+}

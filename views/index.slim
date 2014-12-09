@@ -1,7 +1,7 @@
 nav class="navbar navbar-default navbar-fixed-top" role="navigation"
   div class="container-fluid"
     div class="navbar-header"
-      a class="navbar-brand" href="#" London ITG
+      a class="navbar-brand" href="/" London ITG
       form action="/tags/" method='post' class="navbar-form navbar-left" role="search"
         div class="form-group"
           input type="text" class="form-control" placeholder="search" name="tag" id="tag"
@@ -13,27 +13,27 @@ div id="content"
         div class="col-md-6"
           img src= "/images/#{image.filename}" class='resize'
         div class="col-md-6"
+          div class="col-md-12"
           - for comment in image.comments
            - unless comment.nil?
-              blockquote
-                p= '"' + "#{comment.content}" + '"'
-                small="#{comment.owner}"
-          - for tag in image.tags
+             div class="col-md-4"
+                blockquote class="overflow-fix"
+                  div class="paragraph-fix"
+                   p = '"' + "#{comment.content}" + '"'
+                  small="#{comment.owner}"
+
+          div class="col-md-12"
+            - for tag in image.tags
               span class="label label-info" #{tag.name}
 
+            - avg = Assessment.avg(:rating, :conditions => ['image_id = ?', "#{image.id}"]).to_i.round(1).to_s
+            form action="/rate/#{image.id}" class="form-inline" method='post'
+              div class="form-group"
+                input id="input-1" name="rating" type="number" class="rating" min=1 data-min=0 data-max=5 value=avg step=0.5 data-size="xs"
+              button type='submit' class="btn btn-default" Rate
 
-          p= Assessment.avg(:rating, :conditions => ['image_id = ?', "#{image.id}"])
-          form action="/rate/#{image.id}" class="form-inline" method='post'
-            div class="form-group"
-              select name="rating" id="rating"
-                - for i in 1..5
-                  option value="#{i}" #{i}
-            /label for='rating' Rate
-            /input type='text' name='rating' id='rating'
-            button type='submit' class="btn btn-default" Rate
-
-          form action="/comment/#{image.id}" class="form-inline" method='post'
-            div class="form-group"
-              input type='text' class="form-control name" role="search" name='owner' id='owner' placeholder="Name"
-              input type='text' class="form-control comment-text" role="search" name='comment' id='comment' placeholder="Comment"
-            button type='submit' class="btn btn-default" Submit
+            form action="/comment/#{image.id}" class="form-inline" method='post'
+              div class="form-group"
+                input type='text' class="form-control name" role="search" name='owner' id='owner' placeholder="Name"
+                input type='text' class="form-control comment-text" role="search" name='comment' id='comment' placeholder="Comment"
+              button type='submit' class="btn btn-default" Submit

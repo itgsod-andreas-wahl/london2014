@@ -21,11 +21,8 @@ class App < Sinatra::Base
     @images = []
     splat = params[:splat].first.split('/')
 
-    splat.each do |tag|
-      @images << ImageTag.all(tag: Tag.first(name: tag)).images
-    end
-
-    @images = @images.flatten.uniq
+    @images = splat.map {|tag| ImageTag.all(tag: Tag.first(name: tag)).images}
+    @images = @images.inject(:&)
 
     slim :index
   end
@@ -33,19 +30,8 @@ class App < Sinatra::Base
   post '/tags/' do
     @images = []
 
-    tags = params['tag'].split(', ')
-
-    if tags.is_a? Array
-      tags.each do |tag|
-        @images << ImageTag.all(tag: Tag.first(name: tag)).images
-      end
-    else
-      @images << ImageTag.all(tag: Tag.first(name: params['tag'])).images
-    end
-
-    @images = @images.flatten.uniq
-
-    slim :index
+    tags = params['tag'].split(', ')*"/"
+    redirect "/tags/#{tags}"
   end
 
 end
