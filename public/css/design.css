@@ -9,7 +9,11 @@ image {
 
 .navbar-fixed-top {
     border-bottom: 100px;
-    background-color: #00bc9d;
+    background-color: #2a9fd6;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
 }
 
 #content {
@@ -36,7 +40,7 @@ image {
 }
 
 body {
-    background-color: #2c3e4f;
+    background-color: #2d2d2d;
 }
 
 p {
