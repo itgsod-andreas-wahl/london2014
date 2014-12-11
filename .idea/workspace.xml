@@ -29,28 +29,43 @@
       <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.833334" vertical-offset="70" max-vertical-offset="690">
-              <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+            <state vertical-scroll-proportion="-4.375" vertical-offset="60" max-vertical-offset="690">
+              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.slim" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="snowstorm.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/snowstorm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10080">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.slim" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layout.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-              <folding />
+            <state vertical-scroll-proportion="0.24875621" vertical-offset="0" max-vertical-offset="603">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding>
+                <marker date="1418292769000" expanded="true" signature="20:569" placeholder="head" />
+                <marker date="1418292769000" expanded="true" signature="445:569" placeholder="javascript:" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="design.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="design.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/design.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35885167" vertical-offset="0" max-vertical-offset="810">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="810">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -96,12 +111,13 @@
         <option value="$PROJECT_DIR$/public/js/rating.js" />
         <option value="$PROJECT_DIR$/public/js/comment.js" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/views/index.slim" />
         <option value="$PROJECT_DIR$/helpers/string.rb" />
         <option value="$PROJECT_DIR$/public/js/snow.js" />
         <option value="$PROJECT_DIR$/public/js/c.js" />
-        <option value="$PROJECT_DIR$/views/layout.slim" />
+        <option value="$PROJECT_DIR$/views/index.slim" />
         <option value="$PROJECT_DIR$/public/css/design.css" />
+        <option value="$PROJECT_DIR$/public/js/snowstorm.js" />
+        <option value="$PROJECT_DIR$/views/layout.slim" />
       </list>
     </option>
   </component>
@@ -487,7 +503,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="180">
           <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-          <folding />
+          <folding>
+            <marker date="1418292769000" expanded="true" signature="20:569" placeholder="head" />
+            <marker date="1418292769000" expanded="true" signature="445:569" placeholder="javascript:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -559,7 +578,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="180">
           <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-          <folding />
+          <folding>
+            <marker date="1418292769000" expanded="true" signature="20:569" placeholder="head" />
+            <marker date="1418292769000" expanded="true" signature="445:569" placeholder="javascript:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -800,27 +822,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/design.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="810">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/snowstorm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.833334" vertical-offset="70" max-vertical-offset="690">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        <state vertical-scroll-proportion="-4.375" vertical-offset="60" max-vertical-offset="690">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/design.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35885167" vertical-offset="0" max-vertical-offset="810">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.24875621" vertical-offset="0" max-vertical-offset="603">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <marker date="1418292769000" expanded="true" signature="20:569" placeholder="head" />
+            <marker date="1418292769000" expanded="true" signature="445:569" placeholder="javascript:" />
+          </folding>
         </state>
       </provider>
     </entry>
