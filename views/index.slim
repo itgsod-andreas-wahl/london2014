@@ -36,5 +36,5 @@ div id="content"
                 div class="col-md-4"
                   blockquote class="overflow-fix blockquote-fixed"
                     div class="paragraph-fix"
-                      p = '"' + "#{comment.content}" + '"'
+                      p = '"' + "#{comment.content.truncate}" + '"'
                     small="#{comment.owner}"

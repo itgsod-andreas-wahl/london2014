@@ -9,6 +9,7 @@ image {
 
 .navbar-fixed-top {
     border-bottom: 100px;
+    background-color: #00bc9d;
 }
 
 #content {
@@ -32,4 +33,12 @@ image {
 .blockquote-fixed {
     margin-left: -8.7%;
     margin-top: 15px;
+}
+
+body {
+    background-color: #2c3e4f;
+}
+
+p {
+    color: #ffffff;
 }
